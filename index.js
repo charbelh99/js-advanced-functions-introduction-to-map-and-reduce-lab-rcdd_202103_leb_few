@@ -22,4 +22,9 @@ function reduceToTotal(sourceArray, startingPoint=0){
     const reducer = (accumulator, currentValue) => accumulator && Boolean(currentValue,true);
   return sourceArray.reduce(reducer);
  }
+ function reduceToAnyTrue(sourceArray){
+    const reducer = (accumulator, currentValue) => accumulator || Boolean(currentValue,true);
+  return sourceArray.reduce(reducer);
+ }
+ 
  
